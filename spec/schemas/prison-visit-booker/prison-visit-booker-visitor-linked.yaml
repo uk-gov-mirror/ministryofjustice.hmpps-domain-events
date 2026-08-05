@@ -1,5 +1,5 @@
 contentType: application/json
-name: prison-visit-booker.visitor-approved
+name: prison-visit-booker.visitor-linked
 payload:
   properties:
     additionalInformation:
@@ -15,13 +15,13 @@ payload:
           type: string
       type: object
     description:
-      example: Booker's prisoner, has a visitor added to their list.
+      example: Booker's prisoner has a visitor linked.
       type: string
     detailUrl:
       example: null
       type: string
     eventType:
-      example: prison-visit-booker.visitor-approved
+      example: prison-visit-booker.visitor-linked
       type: string
     occurredAt:
       example: '2024-05-01T19:28:58Z'
@@ -44,5 +44,5 @@ payload:
       example: 1
       type: integer
   type: object
-summary: An event to signify a booker's prisoner, has a visitor added to their list. by hmpps-prison-visit-booker-registry
-title: prison-visit-booker.visitor-approved
+summary: An event to signify a booker's prisoner has a visitor linked by hmpps-prison-visit-booker-registry
+title: prison-visit-booker.visitor-linked

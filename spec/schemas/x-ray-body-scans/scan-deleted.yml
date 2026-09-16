@@ -1,0 +1,25 @@
+name: xraybodyscans.scan.deleted
+title: X-ray body scans service – a scan was deleted
+contentType: application/json
+payload:
+  type: object
+  properties:
+    version:
+      const: 1
+    eventType:
+      const: xraybodyscans.scan.deleted
+    occurredAt:
+      type: string
+      format: date-time
+      example: 2026-09-15T12:34:56+00:00
+    description:
+      type: string
+      example: An x-ray body scan was deleted
+    additionalInformation:
+      type: object
+      properties:
+        id:
+          description: X-ray body scan identifier
+          type: string
+          format: uuid
+          example: 11111111-2222-3333-4444-555555555555
